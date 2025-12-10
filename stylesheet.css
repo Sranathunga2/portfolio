@@ -340,11 +340,19 @@ section{
    display: flex;
    flex-wrap: wrap;
 }
+
+/* Portfolio section - full width centering */
+section:has(#Portfolio){
+   display: block;
+   width: 100%;
+   text-align: center;
+}
 .container1{
-   width: 600px;
-   height: 500px;
-   padding: 75px 90px;
-   margin-left: 120px;
+   width: 100%;
+   max-width: 1000px;
+   height: auto;
+   padding: 40px 30px;
+   margin: 0 auto 40px;
    color: #fff;
 }
 .heading1{
@@ -353,27 +361,48 @@ section{
    text-underline-offset: 10px;
    text-decoration-thickness: 5px;
    margin-bottom: 50px;
+   margin-top: 30px;
 }
 .bar{
-   font-size: 23px;
+   font-size: 20px;
+}
+
+/* Arrange technical skill icons in a single horizontal row */
+.Technical-bars{
+   display: flex;
+   gap: 30px;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: nowrap; /* keep them in one line */
 }
 .Technical-bars .bar{
-   margin: 40px 0; /* top/bottom spacing for each bar */
+   margin: 0;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 8px;
+   padding: 8px 12px;
 }
-.Technical-bars .bar:first-child{
-   margin-top: 0;
-}
-.Technical-bars .bar:last-child{
-   margin-bottom: 0;
+.Technical-bars .bar i{
+   font-size: 36px;
 }
 .Technical-bars .bar .info{
-   margin-bottom: 5px;
+   width: 100%;
+   text-align: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 .Technical-bars .bar .info span{
-   font-size: 17px;
+   font-size: 16px;
    font-weight: 500;
-   animation: showText 0.5s 1s linear forwards;
-   opacity: 0;
+   opacity: 1; /* show labels immediately */
+   white-space: nowrap;
+   color: #ffffff;
+}
+
+@media (max-width: 800px){
+  .Technical-bars{ flex-wrap: wrap; gap: 20px; }
 }
 /* Removed linear progress bars inside .Technical-bars per user request */
 
@@ -458,7 +487,7 @@ section{
    font-size: 16px;
    font-weight: 500;
    color: #ffffff;
-   margin-bottom: 10px;
+   margin-bottom: 0px;
    text-align: center;
 }
 .radial-bars .radial-bar svg{
@@ -500,22 +529,22 @@ section{
 
 @keyframes animate-path1 {
    100% {
-      stroke-dashoffset: 50;
+      stroke-dashoffset: 175;
    }
 }
 @keyframes animate-path2 {
    100% {
-      stroke-dashoffset: 175;
+      stroke-dashoffset: 110;
    }
 }
 @keyframes animate-path3 {
    100% {
-      stroke-dashoffset: 125;
+      stroke-dashoffset: 70;
    }
 }
 @keyframes animate-path4 {
    100% {
-      stroke-dashoffset: 75;
+      stroke-dashoffset: 80;
    }
 }
 .radial-bars .text{
@@ -532,22 +561,32 @@ section{
 }
 
 .main-text{
-   padding-top: 130px;
-   margin-top: 200px;
+   padding-top: 30px;
+   margin-top: 0;
+   width: 100%;
 }
+
 .main-text h2{
+   display: block;
    font-size: 60px;
    line-height: 1;
    text-align: center;
    color: white;
+   padding: 80px 0 70px 0;
+   margin: 0 auto 50px auto;
+   width: 100%;
 }
 .main-text h2 span{
    color: #64FFDA;
    
 }
-.Portfolio-content{
-   display: grid;
-   grid-template-columns: repeat(auto-fit,minmax(359px,auto));
+.Portfolio-content {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  overflow-x: auto;
+  justify-content: center;
+  align-items: stretch;
 }
 .row{
    position: relative;
@@ -731,7 +770,6 @@ section{
    cursor: pointer;
    box-shadow: 0 0 5px #64FFDA,
    0 0 25px #64FFDA;
-   transition: all 0.3s ease;
 }
 .contact-form form .send:hover{
    box-shadow: 0 0 5px #64FFDA,
