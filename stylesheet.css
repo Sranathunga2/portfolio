@@ -70,12 +70,13 @@ body {
    display: flex;
    align-items: center;
    padding: 70px 10% 0;
+   padding-bottom: 100px;
 }
 
 /* overlay to improve contrast for home content */
 .home::before {
    content: "";
-   position: absolute;
+   position: relative;
    inset: 0;
    /* top:0; right:0; bottom:0; left:0; */
    background: #0A192F(86, 54, 54, 0.35);
@@ -84,7 +85,7 @@ body {
 }
 
 .home-content {
-   position: relative;
+   position: absolute;
    z-index: 1;
    color: #ffffff;
    max-width: 600px;
@@ -158,7 +159,7 @@ body {
 .home-sci a:hover {
    background: #64FFDA;
    color: #081b29;
-   box-shadow: 0 0 20px #64FFDA;
+   box-shadow: 0 0 10px #b1e6d9;
    transform: scale(1.1);
    /* slight scale on hover */
 }
@@ -180,18 +181,20 @@ body {
    animation: slideTop 1s ease forwards;
    animation-delay: 2s;
    box-shadow: 0 0 5px #64FFDA,
-      0 0 25px #64FFDA;
+      0 0 15px #64FFDA;
 }
 
 .btn-box:hover {
-   box-shadow: 0 0 5px #64FFDA,
-      0 0 25px #64FFDA,
-      0 0 50px #64FFDA,
-      0 0 100px #64FFDA,
-      0 0 200px #64FFDA;
+   box-shadow: 0 0 2px #64FFDA,
+      0 0 2px #64FFDA,
+      0 0 5px #64FFDA,
+      0 0 5px #64FFDA,
+      0 0 50px #64FFDA;
    transform: scale(1.05);
    /* slight scale on hover */
 }
+
+
 
 .about{
    display: grid;
@@ -207,10 +210,14 @@ body {
    width: 100%;
    border-radius: 8px;
 }
-
+.about-text{
+   padding-right: 100px;
+}
 .about-text h2{
    font-size: 60px;
    color: #fff;
+   padding: 150px 0%;
+   padding-bottom: 5px;
 }
 .about-text h2 span{
    color: #64FFDA;
@@ -218,7 +225,7 @@ body {
 .about-text h4{
    font-size: 29px;
    font-weight: 600;
-   color: #fff;
+   color: #64FFDA;
    line-height: 1.7;
    margin: 15px 0 30px;
 }
@@ -228,6 +235,14 @@ body {
    font-size: 20px;
    line-height: 1.4;
    margin-bottom: 4rem;
+}
+
+/* Space the two buttons in the about section */
+.about-text .btn-box{
+   margin-right: 18px; /* space between buttons */
+}
+.about-text .btn-box:last-child{
+   margin-right: 0;
 }
 
 #services{
@@ -240,6 +255,7 @@ body {
    text-align: center;
    font-size: 60px;
    padding-bottom: 70px;
+   padding-top: 30px;
 }
 .sub-title span{
    color: #64FFDA;
@@ -249,7 +265,8 @@ body {
 }
 .services-list{
    display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(259px, 1fr));
+   /* force three columns on wide screens, fall back responsively */
+   grid-template-columns: repeat(3, 1fr);
    gap: 40px; /* modern shorthand for grid-gap */
    margin-top: 50px;
 }
@@ -264,6 +281,14 @@ body {
    transition: background 0.5s, transform 0.5s;
    box-shadow: 1px 1px 20px rgba(1,34,144,0.6),
                1px 1px 40px #0053b8f7; /* rgba for clearer alpha support */
+}
+
+/* Responsive: stack services on smaller screens */
+@media (max-width: 900px){
+   .services-list{ grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 600px){
+   .services-list{ grid-template-columns: 1fr; }
 }
 
 .services-list div i{
@@ -350,35 +375,8 @@ section{
    animation: showText 0.5s 1s linear forwards;
    opacity: 0;
 }
-.Technical-bars .bar .progress-line{
-   position: relative;
-   border-radius: 10px;
-   width: 100%;
-   height: 5px;
-   background-color: #000000;
-   /* use a valid cubic-bezier with 4 control points */
-   animation: animate 1s cubic-bezier(.25,.1,.25,1) forwards;
-   transform: scaleX(0);
-   transform-origin: left;
-}
-@keyframes animate{
-   100%{
-      transform: scaleX(1);
-   }
-}
-.Technical-bars .bar .progress-line span{
-   height: 100%;
-   background-color: #64FFDA;
-   position: absolute;
-   border-radius: 10px;
-   /* small delay so the fill animates after the bar container */
-   animation: animate 1s 0.6s cubic-bezier(.25,.1,.25,1) forwards;
-   transform: scaleX(0);
-   transform-origin: left;
-}
-.progress-line.html span{
-   width:90%;
-}
+/* Removed linear progress bars inside .Technical-bars per user request */
+
 .progress-line.css span{
    width:90%;
 }
@@ -871,7 +869,8 @@ section{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 100px 8%;
+    padding: 75px 2%;
+    padding-bottom: 200px;
     
 }
 
@@ -880,14 +879,44 @@ section{
     height: 340px;
     object-fit: cover;
     border-radius: 50%;
-    border: 4px solid #64E8C2;
+    border: 6px solid #64e8b583;
     box-shadow: 0 0 40px rgba(100, 232, 194, 0.25);
     animation: float 4s ease-in-out infinite;
    opacity: 0;
    animation: slideTop 1s ease forwards;
    animation-delay: 2s;
    box-shadow: 0 0 5px #64FFDA,
-      0 0 25px #64FFDA;
+      0 0 15px #64FFDA;
+}
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+.hero1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 200px 25%;
+    padding-bottom: 50px;
+    
+}
+
+.hero-image1 img {
+    width: 340px;
+    height: 340px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 6px solid #64e8b583;
+    box-shadow: 0 0 40px rgba(100, 232, 194, 0.25);
+    animation: float 4s ease-in-out infinite;
+   opacity: 0;
+   animation: slideTop 1s ease forwards;
+   animation-delay: 2s;
+   box-shadow: 0 0 5px #64FFDA,
+      0 0 15px #64FFDA;
 }
 
 @keyframes float {
