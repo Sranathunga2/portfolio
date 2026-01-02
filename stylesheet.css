@@ -1004,25 +1004,25 @@ section:has(#Portfolio){
     }
     
     .navbar {
-        margin-top: 5px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 2px;
-        width: 100%;
-        max-width: 100%;
-        overflow: hidden;
+        margin-top: 5px !important;
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        gap: 2px !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        overflow: hidden !important;
     }
     
     .navbar a {
-        font-size: 10px;
-        margin-left: 0;
-        padding: 4px 6px;
-        border-radius: 8px;
-        transition: all 0.3s ease;
-        white-space: nowrap;
-        flex: 0 0 auto;
-        min-width: 0;
+        font-size: 9px !important;
+        margin-left: 0 !important;
+        padding: 3px 5px !important;
+        border-radius: 6px !important;
+        transition: all 0.3s ease !important;
+        white-space: nowrap !important;
+        flex: 0 0 auto !important;
+        min-width: 0 !important;
     }
     
     .navbar a:hover {
@@ -1599,25 +1599,25 @@ section:has(#Portfolio){
     }
     
     .navbar {
-        margin-top: 5px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 2px;
-        width: 100%;
-        max-width: 100%;
-        overflow: hidden;
+        margin-top: 5px !important;
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        gap: 2px !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        overflow: hidden !important;
     }
     
     .navbar a {
-        font-size: 10px;
-        margin-left: 0;
-        padding: 4px 6px;
-        border-radius: 8px;
-        transition: all 0.3s ease;
-        white-space: nowrap;
-        flex: 0 0 auto;
-        min-width: 0;
+        font-size: 9px !important;
+        margin-left: 0 !important;
+        padding: 3px 5px !important;
+        border-radius: 6px !important;
+        transition: all 0.3s ease !important;
+        white-space: nowrap !important;
+        flex: 0 0 auto !important;
+        min-width: 0 !important;
     }
     
     .navbar a:hover {
