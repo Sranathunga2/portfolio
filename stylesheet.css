@@ -7,10 +7,10 @@
 }
 
 body {
-   color: #0A192F;
+   color: #F9FAFB;
    /* reserve space for the fixed header so it doesn't cover content */
    padding-top: 70px;
-   background: #0A192F;
+   background: #111827;
 }
 
 .header {
@@ -21,7 +21,7 @@ body {
    left: 0;
    width: 100%;
    padding: 20px 10%;
-   background: #051129 ;
+   background: #1F2933;
    /* semi-opaque dark bg so white header text is readable */
    display: flex;
    justify-content: space-between;
@@ -54,7 +54,7 @@ body {
 }
 
 .navbar a:hover {
-   color: #64FFDA;
+   color: #22C55E;
 }
 
 .home {
@@ -116,7 +116,7 @@ body {
 }
 
 .home-content h3 span {
-   color: #64FFDA;
+   color: #22C55E;
 
 }
 
@@ -141,10 +141,10 @@ body {
    width: 40px;
    height: 40px;
    background: transparent;
-   border: 2px solid #64FFDA;
+   border: 2px solid #22C55E;
    border-radius: 50%;
    font-size: 20px;
-   color: #64FFDA;
+   color: #22C55E;
    text-decoration: none;
    transition: .5s ease;
    opacity: 0;
@@ -157,9 +157,9 @@ body {
 }
 
 .home-sci a:hover {
-   background: #64FFDA;
-   color: #081b29;
-   box-shadow: 0 0 10px #b1e6d9;
+   background: #22C55E;
+   color: #111827;
+   box-shadow: 0 0 10px #4ADE80;
    transform: scale(1.1);
    /* slight scale on hover */
 }
@@ -167,10 +167,10 @@ body {
 .btn-box {
    display: inline-block;
    padding: 12px 28px;
-   background: #64FFDA;
+   background: #22C55E;
    border-radius: 40px;
    font-size: 16px;
-   color: #081b29;
+   color: #111827;
    letter-spacing: 1px;
    text-decoration: none;
    font-weight: 600;
@@ -180,16 +180,16 @@ body {
    opacity: 0;
    animation: slideTop 1s ease forwards;
    animation-delay: 2s;
-   box-shadow: 0 0 5px #64FFDA,
-      0 0 15px #64FFDA;
+   box-shadow: 0 0 5px #22C55E,
+      0 0 15px #22C55E;
 }
 
 .btn-box:hover {
-   box-shadow: 0 0 2px #64FFDA,
-      0 0 2px #64FFDA,
-      0 0 5px #64FFDA,
-      0 0 5px #64FFDA,
-      0 0 50px #64FFDA;
+   box-shadow: 0 0 2px #22C55E,
+      0 0 2px #22C55E,
+      0 0 5px #22C55E,
+      0 0 5px #22C55E,
+      0 0 50px #22C55E;
    transform: scale(1.05);
    /* slight scale on hover */
 }
@@ -220,18 +220,18 @@ body {
    padding-bottom: 5px;
 }
 .about-text h2 span{
-   color: #64FFDA;
+   color: #22C55E;
 }
 .about-text h4{
    font-size: 29px;
    font-weight: 600;
-   color: #64FFDA;
+   color: #4ADE80;
    line-height: 1.7;
    margin: 15px 0 30px;
 }
 
 .about-text p{
-   color: aliceblue;
+   color: #9CA3AF;
    font-size: 20px;
    line-height: 1.4;
    margin-bottom: 4rem;
@@ -246,7 +246,7 @@ body {
 }
 
 #services{
-   color: aliceblue;
+   color: #9CA3AF;
    font-size: 20px;
    line-height: 1.4;
    margin-bottom: 4rem;
@@ -258,7 +258,7 @@ body {
    padding-top: 30px;
 }
 .sub-title span{
-   color: #64FFDA;
+   color: #22C55E;
 }
 .container{
    padding: 90px;
@@ -271,16 +271,16 @@ body {
    margin-top: 50px;
 }
 .services-list div{
-   background-color: transparent;
+   background-color: #1F2933;
    padding: 40px;
    font-size: 13px;
    font-weight: 400; /* valid numeric weight */
    /* If you want a right border, set full shorthand: width style color */
-   border-right: 10px solid rgba(0,0,0,0.08);
+   border-right: 10px solid rgba(34, 197, 94, 0.2);
    border-radius: 20px;
    transition: background 0.5s, transform 0.5s;
-   box-shadow: 1px 1px 20px rgba(1,34,144,0.6),
-               1px 1px 40px #0053b8f7; /* rgba for clearer alpha support */
+   box-shadow: 1px 1px 20px rgba(31, 41, 51, 0.6),
+               1px 1px 40px rgba(34, 197, 94, 0.2); /* rgba for clearer alpha support */
 }
 
 /* Responsive: stack services on smaller screens */
@@ -312,10 +312,10 @@ body {
 .read{
    display: inline-block;
    padding: 12px 28px;
-   background: #64FFDA;
+   background: #22C55E;
    border-radius: 40px;
    font-size: 16px;
-   color: #081b29;
+   color: #111827;
    letter-spacing: 1px;
    text-decoration: none;
    font-weight: 600;
@@ -323,14 +323,14 @@ body {
    animation: slideTop 0.6s ease forwards;
    animation-delay: 0.3s; /* reduced from 2s so link is visible sooner */
    transition: all 0.3s ease;
-   box-shadow: 0 0 5px #64FFDA,
-   0 0 25px #64FFDA;
+   box-shadow: 0 0 5px #22C55E,
+   0 0 25px #22C55E;
 }
 
 .read:hover{
    transform: scale(1.05);
-   box-shadow: 0 0 10px #64FFDA,
-   0 0 40px #64FFDA;
+   box-shadow: 0 0 10px #22C55E,
+   0 0 40px #22C55E;
 }
 .services-list div:hover{
    transform: translateY(-10px);
@@ -353,13 +353,14 @@ section:has(#Portfolio){
    height: auto;
    padding: 40px 30px;
    margin: 0 auto 40px;
-   color: #fff;
+   color: #FFFFFF;
 }
 .heading1{
    text-align: center;
    text-decoration: underline;
    text-underline-offset: 10px;
    text-decoration-thickness: 5px;
+   text-decoration-color: #22C55E;
    margin-bottom: 50px;
    margin-top: 30px;
 }
@@ -398,7 +399,7 @@ section:has(#Portfolio){
    font-weight: 500;
    opacity: 1; /* show labels immediately */
    white-space: nowrap;
-   color: #ffffff;
+   color: #FFFFFF;
 }
 
 @media (max-width: 800px){
@@ -486,7 +487,7 @@ section:has(#Portfolio){
 .radial-bars .radial-bar .text{
    font-size: 16px;
    font-weight: 500;
-   color: #ffffff;
+   color: #FFFFFF;
    margin-bottom: 0px;
    text-align: center;
 }
@@ -502,12 +503,12 @@ section:has(#Portfolio){
    transform: translate(-50%, -50%);
    font-size: 15px;
    font-weight: 600;
-   color: #64FFDA;
+   color: #22C55E;
    z-index: 10;
 }
 .radial-bars .radial-bar .progress-bar{
    stroke-width: 10;
-   stroke: rgba(0, 0, 0, 0.903); /* subtle cyan background track */
+   stroke: rgba(255, 255, 255, 0.1); /* subtle background track */
    fill: transparent;
    stroke-dasharray: 502;
    stroke-dashoffset: 0;
@@ -516,7 +517,7 @@ section:has(#Portfolio){
 
 .path{
    stroke-width: 10;
-   stroke: #64FFDA; /* cyan animated ring */
+   stroke: #22C55E; /* primary green animated ring */
    fill: transparent; /* no center fill */
    stroke-dasharray: 502;
    stroke-dashoffset: 502; /* starts hidden, animates to show */
@@ -571,13 +572,13 @@ section:has(#Portfolio){
    font-size: 60px;
    line-height: 1;
    text-align: center;
-   color: white;
+   color: #F9FAFB;
    padding: 80px 0 70px 0;
    margin: 0 auto 50px auto;
    width: 100%;
 }
 .main-text h2 span{
-   color: #64FFDA;
+   color: #22C55E;
    
 }
 .Portfolio-content {
@@ -603,7 +604,7 @@ section:has(#Portfolio){
 .layer{
    width: 100%;
    height: 0;
-   background: linear-gradient(rgba(0,0,0,0.1),#64FFDA);
+   background: linear-gradient(rgba(17,24,39,0.1),#22C55E);
    position: absolute;
    border-radius: 8px;
    left: 0;
@@ -618,21 +619,21 @@ section:has(#Portfolio){
    transition: height 0.5s;
 }
 .layer h5{
-   color: #000000;
+   color: #111827;
    font-size: 20px;
    font-weight: 600;
    margin-bottom: 15px;
 }
 .layer p{
-   color: #000000;
+   color: #111827;
    font-size: 1rem;
    line-height: 1.8;
 }
 .layer i{
-   color: #ff004f;
+   color: #111827;
    margin-top: 20px;
    font-size: 20px;
-   background: #fff;
+   background: #F9FAFB;
    width: 60px;
    height: 60px;
    display: flex;
@@ -659,19 +660,19 @@ section:has(#Portfolio){
    font-size: 90px;
    line-height: 1;
    text-align: center;
-   color: #ffffff;
+   color: #F9FAFB;
 }
 .contact-text h2 span{
-   color: aqua;
+   color: #22C55E;
 }
 .contact-text h4{
    margin: 15px 0;
-   color: rgb(228,228,228);
+   color: #4ADE80;
    font-size: 20px;
    font-weight: 600;
 }
 .contact-text p{
-   color: rgb(177,177,177);
+   color: #9CA3AF;
    font-size: 20px;
    line-height: 30px;
    margin-bottom: 2rem;
@@ -689,19 +690,19 @@ section:has(#Portfolio){
 }
 .contact-list i{
    display: inline-block;
-   color: #64FFDA;
+   color: #22C55E;
    font-size: 20px;
    font-weight: 600;
    transition: all .40s ease;
 }
 .contact-list li a:hover{
    transform: scale(1.01) translateY(-5px);
-   color: #64FFDA;
+   color: #22C55E;
 }
 
 /* Ensure contact links are visible and clickable */
 .contact-list li a{
-   color: #ffffff; /* link color */
+   color: #F9FAFB; /* link color */
    text-decoration: none;
    display: inline-flex;
    align-items: center;
@@ -709,7 +710,7 @@ section:has(#Portfolio){
    pointer-events: auto;
 }
 .contact-list li a i{
-   color: #64FFDA; /* keep icon cyan */
+   color: #22C55E; /* keep icon primary green */
 }
 .contact-icons i{
    display: inline-flex;
@@ -718,10 +719,10 @@ section:has(#Portfolio){
    width: 40px;
    height: 40px;
    background: transparent;
-   border: 2px solid #64FFDA;
+   border: 2px solid #22C55E;
    border-radius: 50%;
    font-size: 20px;
-   color: #64FFDA;
+   color: #22C55E;
    text-decoration: none;
    margin: 30px 15px 30px 0;
    transition: .5s ease;
@@ -730,9 +731,9 @@ section:has(#Portfolio){
    animation-delay: calc(.2s * var(--i));
 }
 .contact-icons i:hover{
-   background: #64FFDA;
-   color: #000000;
-   box-shadow: 0 0 20px #64FFDA;
+   background: #22C55E;
+   color: #111827;
+   box-shadow: 0 0 20px #22C55E;
 }
 .contact-form form
 {
@@ -743,8 +744,8 @@ section:has(#Portfolio){
    outline: none;
    width: 90%;
    padding: 18px;
-   background: #555555;
-   color: #000000;
+   background: #1F2933;
+   color: #F9FAFB;
    font-size: 1rem;
    font-weight: 600;
    margin-bottom: 0.5rem;
@@ -757,10 +758,10 @@ section:has(#Portfolio){
 .contact-form form .send{
    display: inline-block;
    padding: 14px 60px;
-   background: #64FFDA;
+   background: #22C55E;
    border-radius: 40px;
    font-size: 18px;
-   color: #081b29;
+   color: #111827;
    letter-spacing: 1px;
    text-decoration: none;
    font-weight: 600;
@@ -768,22 +769,23 @@ section:has(#Portfolio){
    animation: slideTop 1s ease forwards;
    animation-delay: 2s;
    cursor: pointer;
-   box-shadow: 0 0 5px #64FFDA,
-   0 0 25px #64FFDA;
+   box-shadow: 0 0 5px #22C55E,
+   0 0 25px #22C55E;
 }
 .contact-form form .send:hover{
-   box-shadow: 0 0 5px #64FFDA,
-   0 0 25px #64FFDA,
-   0 0 50px #64FFDA,
-   0 0 100px #64FFDA,
-   0 0 200px #64FFDA;
+   box-shadow: 0 0 5px #22C55E,
+   0 0 25px #22C55E,
+   0 0 50px #22C55E,
+   0 0 100px #22C55E,
+   0 0 200px #22C55E;
    transform: scale(1.05);
 }
 .last-text p{
    width: 100%;
    text-align: center;
    padding: 25px 0;
-   background: rgb(7,85,91);
+   background: #1F2933;
+   color: #9CA3AF;
    font-weight: 300;
    margin-top: 70px;
 }
@@ -793,8 +795,8 @@ section:has(#Portfolio){
    right: 2.1rem;
 }
 .top i{
-   color: #000000;
-   background: #64FFDA;
+   color: #111827;
+   background: #22C55E;
    font-size: 20px;
    padding: 10px;
    border-radius: 0.5rem;
@@ -917,14 +919,14 @@ section:has(#Portfolio){
     height: 340px;
     object-fit: cover;
     border-radius: 50%;
-    border: 6px solid #64e8b583;
-    box-shadow: 0 0 40px rgba(100, 232, 194, 0.25);
+    border: 6px solid #22C55E;
+    box-shadow: 0 0 40px rgba(34, 197, 94, 0.25);
     animation: float 4s ease-in-out infinite;
    opacity: 0;
    animation: slideTop 1s ease forwards;
    animation-delay: 2s;
-   box-shadow: 0 0 5px #64FFDA,
-      0 0 15px #64FFDA;
+   box-shadow: 0 0 5px #22C55E,
+      0 0 15px #22C55E;
 }
 
 @keyframes float {
@@ -995,7 +997,7 @@ section:has(#Portfolio){
         width: 100%;
         top: 0;
         z-index: 1000;
-        background: #051129;
+        background: #1F2933;
     }
     
     .logo {
@@ -1512,14 +1514,14 @@ section:has(#Portfolio){
     height: 340px;
     object-fit: cover;
     border-radius: 50%;
-    border: 6px solid #64e8b583;
-    box-shadow: 0 0 40px rgba(100, 232, 194, 0.25);
+    border: 6px solid #22C55E;
+    box-shadow: 0 0 40px rgba(34, 197, 94, 0.25);
     animation: float 4s ease-in-out infinite;
-   opacity: 0;
-   animation: slideTop 1s ease forwards;
-   animation-delay: 2s;
-   box-shadow: 0 0 5px #64FFDA,
-      0 0 15px #64FFDA;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 2s;
+    box-shadow: 0 0 5px #22C55E,
+      0 0 15px #22C55E;
 }
 
 @keyframes float {
@@ -1590,7 +1592,7 @@ section:has(#Portfolio){
         width: 100%;
         top: 0;
         z-index: 1000;
-        background: #051129;
+        background: #1F2933;
     }
     
     .logo {
